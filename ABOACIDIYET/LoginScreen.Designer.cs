@@ -86,9 +86,9 @@
             this.label3.Location = new System.Drawing.Point(16, 553);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(288, 29);
+            this.label3.Size = new System.Drawing.Size(275, 29);
             this.label3.TabIndex = 0;
-            this.label3.Text = "2Kayıt olmak için tıklayınız";
+            this.label3.Text = "Kayıt olmak için tıklayınız";
             // 
             // pictureBox1
             // 
