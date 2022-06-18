@@ -28,8 +28,17 @@ namespace ABOACIDIYET
         private void LoginScreen_Load(object sender, EventArgs e)
         {
             db.Database.Initialize(true);
+        }       
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            RegisterForm registerForm = new RegisterForm();
+            this.Hide();
+            registerForm.ShowDialog();
+            this.Show();
         }
-        private void btnGirisYap_Click(object sender, EventArgs e)
+
+        private void btnJoin_Click(object sender, EventArgs e)
         {
             string email = txtUserName.Text;
             string password = txtUserPassword.Text;
@@ -58,22 +67,13 @@ namespace ABOACIDIYET
                 }
                 else
                 {
-                    MessageBox.Show("Lütfen doğru bilgileri giriniz. Eğer üye değilseniz kayıt olunuz");
+                    throw new Exception("Lütfen doğru bilgileri giriniz. Eğer üye değilseniz kayıt olunuz");                
                 }
             }
             catch (Exception ex)
             {
-
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            RegisterForm registerForm = new RegisterForm();
-            this.Hide();
-            registerForm.ShowDialog();
-            this.Show();
         }
     }
 }

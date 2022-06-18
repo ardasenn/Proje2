@@ -25,24 +25,25 @@ namespace ABOACIDIYET
         private void RegisterForm_Load(object sender, EventArgs e)
         {
             dtpBirthDate.MaxDate = DateTime.Now;
+            rdbMale.Checked = true;
         }
-
-        private void btnGirisYap_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
+            
             int affRow = 0;
             try
             {
+                if (!txtHeight.Text.All(char.IsDigit) || string.IsNullOrEmpty(txtHeight.Text)) throw new Exception("Hatalı bir boy değeri girdiniz.");                
                 if (txtPassword.Text != txtPasswordAgain.Text)
                 {
-                    throw new Exception("Şifre tekrarı hatalı");
-                    //MessageBox.Show("Şifre tekrarı hatalı");
-                    //return;
+                    throw new Exception("Şifreniz uyuşmamakta. Lütfen tekrar deneyiniz");                   
                 }
                 User user = new User()
                 {
                     FirstName = txtFirstName.Text,
                     LastName = txtLastName.Text,
                     Email = txtEmail.Text,
+                    Height = Convert.ToInt32(txtHeight.Text),
                     BirthDate = dtpBirthDate.Value,
                     Gender = rdbMale.Checked ? Gender.Erkek : Gender.Kadin,
                     Country = txtCountry.Text,
@@ -56,11 +57,7 @@ namespace ABOACIDIYET
             {
                 MessageBox.Show(a.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            finally
-            {
-                MessageBox.Show(affRow > 0 ? "Kullanıcı Eklendi" : "Kullanıcı Eklenemedi");
-            }
-
+            if(affRow > 0) MessageBox.Show("Kullanıcı Eklendi");
         }
     }
 }
