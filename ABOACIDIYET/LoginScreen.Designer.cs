@@ -64,7 +64,7 @@
             // 
             this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtUserName.Location = new System.Drawing.Point(188, 336);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(531, 34);
             this.txtUserName.TabIndex = 1;
@@ -73,7 +73,7 @@
             // 
             this.txtUserPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtUserPassword.Location = new System.Drawing.Point(188, 379);
-            this.txtUserPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUserPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserPassword.Name = "txtUserPassword";
             this.txtUserPassword.Size = new System.Drawing.Size(531, 34);
             this.txtUserPassword.TabIndex = 1;
@@ -86,16 +86,16 @@
             this.label3.Location = new System.Drawing.Point(16, 553);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(275, 29);
+            this.label3.Size = new System.Drawing.Size(288, 29);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Kayıt olmak için tıklayınız";
+            this.label3.Text = "2Kayıt olmak için tıklayınız";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::ABOACIDIYET.Properties.Resources.kilo_vermek_icin_kolay_uygulanabilir_diyet_listesi_4859_1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(704, 304);
             this.pictureBox1.TabIndex = 2;
@@ -105,7 +105,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(188, 422);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(532, 71);
             this.button1.TabIndex = 3;
@@ -125,7 +125,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginScreen";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.LoginScreen_Load);
