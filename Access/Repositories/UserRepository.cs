@@ -49,11 +49,7 @@ namespace Access.Repositories
                 {
                     return user;
                 }
-            }
-            else
-            {
-                new Exception("Böyle bir emaile sahip kayıtlı kullanıcı yoktur");
-            }
+            }           
             return null;
         }
         /// <summary>

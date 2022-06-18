@@ -46,12 +46,26 @@ namespace ABOACIDIYET.Entities
             get { return email; }
             set
             {
-                if (!value.EndsWith(".com") && !value.Contains('@')) throw new Exception("Geçerli bir email adresi giriniz");
+                if (!(value.Contains("@") && value.EndsWith(".com"))) throw new Exception("Geçerli bir email adresi giriniz");//neden || neden && değil ?
                 else email = value;
             }
         }
 
-        public int Height { get; set; }
+        private int height;
+
+        public int Height
+        {
+            get { return height; }
+            set
+            {
+                if (value.ToString().Length <= 3 && value.ToString().All(char.IsNumber) && value.ToString().Length > 2 )
+                {
+                    height = value;
+                }
+                else { throw new Exception("Boyunuz mantıklı bir değer olmak zorunda"); }
+            }
+        }
+
 
         private string password;
 
@@ -60,9 +74,9 @@ namespace ABOACIDIYET.Entities
             get { return password; }
             set
             {
-                //if (value.Length < 5 || !value.Any(char.IsDigit)) throw new Exception("Şifreniz 5 karakterden az veya en az bir sayı içermeli");
-                //else password = value;
-                password = value;
+                if (value.Length < 5 ) throw new Exception("Şifreniz 5 karakterden az veya en az bir sayı içermeli");
+                else password = value;
+                
             }
         }
 
@@ -76,7 +90,6 @@ namespace ABOACIDIYET.Entities
             else birthDate = value;
             }
         }
-
         public Gender Gender { get; set; }
         public string Country { get; set; }
         public string City { get; set; }
