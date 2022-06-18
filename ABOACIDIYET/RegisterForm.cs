@@ -30,32 +30,37 @@ namespace ABOACIDIYET
         private void btnGirisYap_Click(object sender, EventArgs e)
         {
             int affRow = 0;
-
-            if (txtPassword.Text != txtPasswordAgain.Text)
+            try
             {
-                MessageBox.Show("Şifre tekrarı hatalı");
-                return;
+                if (txtPassword.Text != txtPasswordAgain.Text)
+                {
+                    throw new Exception("Şifre tekrarı hatalı");
+                    //MessageBox.Show("Şifre tekrarı hatalı");
+                    //return;
+                }
+                User user = new User()
+                {
+                    FirstName = txtFirstName.Text,
+                    LastName = txtLastName.Text,
+                    Email = txtEmail.Text,
+                    BirthDate = dtpBirthDate.Value,
+                    Gender = rdbMale.Checked ? Gender.Erkek : Gender.Kadin,
+                    Country = txtCountry.Text,
+                    City = txtCity.Text,
+                    Password = txtPassword.Text,
+
+                };
+                affRow = userRepository.Insert(user);
+            }
+            catch (Exception a)
+            {
+                MessageBox.Show(a.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            finally
+            {
+                MessageBox.Show(affRow > 0 ? "Kullanıcı Eklendi" : "Kullanıcı Eklenemedi");
             }
 
-            User user = new User()
-            {
-                FirstName = txtFirstName.Text,
-                LastName = txtLastName.Text,
-                Email = txtEmail.Text,
-                Birthdate = dtpBirthDate.Value,
-                Gender = rdbMale.Checked ? Gender.Erkek : Gender.Kadin,
-                Country = txtCountry.Text,
-                City = txtCity.Text,
-                Password = txtPassword.Text,
-
-            };
-
-            affRow = userRepository.Insert(user);
-            MessageBox.Show(affRow > 0 ? "Kullanıcı Eklendi" : "Kullanıcı Eklenemedi");
-
-
         }
-
-
     }
 }

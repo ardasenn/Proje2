@@ -1886,7 +1886,7 @@ namespace Access.Strategy
                 .RuleFor(u => u.Email, (f, u) => f.Internet.Email(u.FirstName, u.LastName))
                 .RuleFor(u => u.Height, f => f.Random.Number(150, 220))
                 .RuleFor(u => u.Password, f => f.Internet.Password())
-                .RuleFor(u => u.Birthdate, f => f.Person.DateOfBirth)
+                .RuleFor(u => u.BirthDate, f => f.Person.DateOfBirth)
                 .RuleFor(u => u.Country, f => f.Address.Country())
                 .RuleFor(u => u.City, f => f.Address.City());
 
@@ -1896,7 +1896,7 @@ namespace Access.Strategy
             user.LastName = "Admin";
             user.Email = "admin@bilgeadam.com";
             user.Password = "admin";
-            user.Birthdate = DateTime.Now;
+            user.BirthDate = DateTime.Now.AddYears(-18);
             user.UserType = UserType.Admin;
             context.Users.Add(user);
 
@@ -1911,7 +1911,7 @@ namespace Access.Strategy
             .RuleFor(u => u.Email, (f, u) => f.Internet.Email(u.FirstName, u.LastName))
             .RuleFor(u => u.Height, f => f.Random.Number(150, 220))
             .RuleFor(u => u.Password, f => f.Internet.Password())
-            .RuleFor(u => u.Birthdate, f => f.Person.DateOfBirth)
+            .RuleFor(u => u.BirthDate, f => f.Person.DateOfBirth)
             .RuleFor(u => u.Country, f => f.Address.Country())
             .RuleFor(u => u.City, f => f.Address.City())
             .RuleFor(u => u.UserType, f=> UserType.User);
@@ -1922,9 +1922,6 @@ namespace Access.Strategy
 
             //Activity activities = new Faker<Activity>()
             //    .RuleFor(a => a.ActivityName, f => f);
-
-
-
 
             context.SaveChanges();
 

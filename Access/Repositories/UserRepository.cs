@@ -24,9 +24,8 @@ namespace Access.Repositories
         public int Insert(User user)
         {
             if (string.IsNullOrWhiteSpace(user.FirstName) && string.IsNullOrWhiteSpace(user.LastName) && string.IsNullOrWhiteSpace(user.Password)) throw new Exception("FirstName, LastName ve Parola bilgilerini giriniz");
-            
             //if (db.Users.Where(x=> x.Email == user.Email)) throw new Exception("Böyle bir email adresi zaten kayıtta mevcut");
-            
+
             user.UserType = UserType.User;
             db.Users.Add(user);
             int affRows = db.SaveChanges();
