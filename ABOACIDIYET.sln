@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABOACIDIYET", "ABOACIDIYET\ABOACIDIYET.csproj", "{F069200C-433A-4F9F-A475-A4CFE3681C16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{DEFA7DDB-6927-4AEE-B985-3A91EBBA614A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Access", "Access\Access.csproj", "{ED733374-16E5-4747-9E94-397B27575454}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F069200C-433A-4F9F-A475-A4CFE3681C16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F069200C-433A-4F9F-A475-A4CFE3681C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F069200C-433A-4F9F-A475-A4CFE3681C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F069200C-433A-4F9F-A475-A4CFE3681C16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEFA7DDB-6927-4AEE-B985-3A91EBBA614A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEFA7DDB-6927-4AEE-B985-3A91EBBA614A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEFA7DDB-6927-4AEE-B985-3A91EBBA614A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEFA7DDB-6927-4AEE-B985-3A91EBBA614A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED733374-16E5-4747-9E94-397B27575454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED733374-16E5-4747-9E94-397B27575454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED733374-16E5-4747-9E94-397B27575454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED733374-16E5-4747-9E94-397B27575454}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81537D54-4F75-4794-931A-CBE3A4C158AA}
+	EndGlobalSection
+EndGlobal

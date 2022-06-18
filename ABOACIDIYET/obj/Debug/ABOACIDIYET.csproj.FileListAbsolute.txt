@@ -1,0 +1,95 @@
+D:\ARDA D\Arda\YAZILIM\ABOACIDIYET\ABOACIDIYET\bin\Debug\ABOACIDIYET.exe.config
+D:\ARDA D\Arda\YAZILIM\ABOACIDIYET\ABOACIDIYET\bin\Debug\ABOACIDIYET.exe
+D:\ARDA D\Arda\YAZILIM\ABOACIDIYET\ABOACIDIYET\bin\Debug\ABOACIDIYET.pdb
+D:\ARDA D\Arda\YAZILIM\ABOACIDIYET\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.AssemblyReference.cache
+D:\ARDA D\Arda\YAZILIM\ABOACIDIYET\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.SuggestedBindingRedirects.cache
+D:\ARDA D\Arda\YAZILIM\ABOACIDIYET\ABOACIDIYET\obj\Debug\ABOACIDIYET.Form1.resources
+D:\ARDA D\Arda\YAZILIM\ABOACIDIYET\ABOACIDIYET\obj\Debug\ABOACIDIYET.Properties.Resources.resources
+D:\ARDA D\Arda\YAZILIM\ABOACIDIYET\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.GenerateResource.cache
+D:\ARDA D\Arda\YAZILIM\ABOACIDIYET\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.CoreCompileInputs.cache
+D:\ARDA D\Arda\YAZILIM\ABOACIDIYET\ABOACIDIYET\obj\Debug\ABOACIDIYET.exe
+D:\ARDA D\Arda\YAZILIM\ABOACIDIYET\ABOACIDIYET\obj\Debug\ABOACIDIYET.pdb
+D:\ARDA D\Arda\YAZILIM\ABOACIDIYET\ABOACIDIYET\obj\Debug\ABOACIDIYET.RegisterForm.resources
+D:\ARDA D\Arda\YAZILIM\ABOACIDIYET\ABOACIDIYET\obj\Debug\ABOACIDIYET.UserScreen.resources
+C:\Users\bberk\source\Repos\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.AssemblyReference.cache
+C:\Users\bberk\source\Repos\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.SuggestedBindingRedirects.cache
+C:\Users\bberk\source\Repos\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.Properties.Resources.resources
+C:\Users\bberk\source\Repos\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.RegisterForm.resources
+C:\Users\bberk\source\Repos\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.UserScreen.resources
+C:\Users\bberk\source\Repos\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.GenerateResource.cache
+C:\Users\bberk\source\Repos\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.CoreCompileInputs.cache
+C:\Users\bberk\source\Repos\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.exe
+C:\Users\bberk\source\Repos\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.pdb
+D:\Projects\abooo\ABOACIDIYET\bin\Debug\ABOACIDIYET.exe.config
+D:\Projects\abooo\ABOACIDIYET\bin\Debug\ABOACIDIYET.exe
+D:\Projects\abooo\ABOACIDIYET\bin\Debug\ABOACIDIYET.pdb
+D:\Projects\abooo\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.AssemblyReference.cache
+D:\Projects\abooo\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.SuggestedBindingRedirects.cache
+D:\Projects\abooo\ABOACIDIYET\obj\Debug\ABOACIDIYET.Form1.resources
+D:\Projects\abooo\ABOACIDIYET\obj\Debug\ABOACIDIYET.Properties.Resources.resources
+D:\Projects\abooo\ABOACIDIYET\obj\Debug\ABOACIDIYET.RegisterForm.resources
+D:\Projects\abooo\ABOACIDIYET\obj\Debug\ABOACIDIYET.TargetRegisterForm.resources
+D:\Projects\abooo\ABOACIDIYET\obj\Debug\ABOACIDIYET.UserScreen.resources
+D:\Projects\abooo\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.GenerateResource.cache
+D:\Projects\abooo\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.CoreCompileInputs.cache
+D:\Projects\abooo\ABOACIDIYET\obj\Debug\ABOACIDIYET.exe
+D:\Projects\abooo\ABOACIDIYET\obj\Debug\ABOACIDIYET.pdb
+D:\Projects\abooo\ABOACIDIYET\obj\Debug\ABOACIDIYET.AdminScreen.resources
+D:\Projects\abooo\ABOACIDIYET\obj\Debug\ABOACIDIYET.MealRegisterForm.resources
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\bin\Debug\ABOACIDIYET.exe.config
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\bin\Debug\ABOACIDIYET.exe
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\bin\Debug\ABOACIDIYET.pdb
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.AssemblyReference.cache
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.SuggestedBindingRedirects.cache
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.AdminScreen.resources
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.LoginScreen.resources
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.MealRegisterForm.resources
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.Properties.Resources.resources
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.RegisterForm.resources
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.TargetRegisterForm.resources
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.UserScreen.resources
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.GenerateResource.cache
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.CoreCompileInputs.cache
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.exe
+D:\ARDA D\Arda\YAZILIM\PROJEBOOST\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.pdb
+D:\Projects\PROJE3\ABOACIDIYET\bin\Debug\ABOACIDIYET.exe.config
+D:\Projects\PROJE3\ABOACIDIYET\bin\Debug\ABOACIDIYET.exe
+D:\Projects\PROJE3\ABOACIDIYET\bin\Debug\ABOACIDIYET.pdb
+D:\Projects\PROJE3\ABOACIDIYET\bin\Debug\Access.dll
+D:\Projects\PROJE3\ABOACIDIYET\bin\Debug\EntityFramework.dll
+D:\Projects\PROJE3\ABOACIDIYET\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\PROJE3\ABOACIDIYET\bin\Debug\Model.dll
+D:\Projects\PROJE3\ABOACIDIYET\bin\Debug\Access.pdb
+D:\Projects\PROJE3\ABOACIDIYET\bin\Debug\Access.dll.config
+D:\Projects\PROJE3\ABOACIDIYET\bin\Debug\EntityFramework.xml
+D:\Projects\PROJE3\ABOACIDIYET\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\PROJE3\ABOACIDIYET\bin\Debug\Model.pdb
+D:\Projects\PROJE3\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.AssemblyReference.cache
+D:\Projects\PROJE3\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.SuggestedBindingRedirects.cache
+D:\Projects\PROJE3\ABOACIDIYET\obj\Debug\ABOACIDIYET.AdminScreen.resources
+D:\Projects\PROJE3\ABOACIDIYET\obj\Debug\ABOACIDIYET.LoginScreen.resources
+D:\Projects\PROJE3\ABOACIDIYET\obj\Debug\ABOACIDIYET.MealRegisterForm.resources
+D:\Projects\PROJE3\ABOACIDIYET\obj\Debug\ABOACIDIYET.Properties.Resources.resources
+D:\Projects\PROJE3\ABOACIDIYET\obj\Debug\ABOACIDIYET.RegisterForm.resources
+D:\Projects\PROJE3\ABOACIDIYET\obj\Debug\ABOACIDIYET.TargetRegisterForm.resources
+D:\Projects\PROJE3\ABOACIDIYET\obj\Debug\ABOACIDIYET.UserScreen.resources
+D:\Projects\PROJE3\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.GenerateResource.cache
+D:\Projects\PROJE3\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.CoreCompileInputs.cache
+D:\Projects\PROJE3\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.CopyComplete
+D:\Projects\PROJE3\ABOACIDIYET\obj\Debug\ABOACIDIYET.exe
+D:\Projects\PROJE3\ABOACIDIYET\obj\Debug\ABOACIDIYET.pdb
+D:\Projects\PROJE3\ABOACIDIYET\bin\Debug\Bogus.dll
+D:\Projects\PROJE3\ABOACIDIYET\bin\Debug\Bogus.xml
+D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.AssemblyReference.cache
+D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.SuggestedBindingRedirects.cache
+D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.AdminScreen.resources
+D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.LoginScreen.resources
+D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.MealRegisterForm.resources
+D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.Properties.Resources.resources
+D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.RegisterForm.resources
+D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.TargetRegisterForm.resources
+D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.UserScreen.resources
+D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.GenerateResource.cache
+D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.csproj.CoreCompileInputs.cache
+D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.exe
+D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\ABOACIDIYET\obj\Debug\ABOACIDIYET.pdb
