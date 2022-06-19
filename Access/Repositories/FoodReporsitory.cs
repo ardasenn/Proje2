@@ -34,7 +34,7 @@ namespace Access.Repositories
         /// </summary>
         /// <param name="userID"></param>
         /// <returns></returns>
-        public List<MealAndFood> GetByUserAndFoodId(int foodID,int userID)  // not al böyle bişey mmükün mü
+        public List<MealAndFood> GetByUserAndFoodId(int foodID,int userID)  // adamın peynir yediği tüm öğünler
         {
             return db.MealsAndFoods.Where(a => a.Meal.UserID == userID && a.FoodID == foodID).ToList();
 

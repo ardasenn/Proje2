@@ -20,15 +20,23 @@ namespace ABOACIDIYET
         User user;
         AboDbContext db;
         ActivityRepository activityRepository;
+        MealRepository mealRepository;
+        FoodReporsitory foodRepository;
         List<Activity> activities;
         List<Target> targets;
         List<UserAndActivity> usersAndActivities;
+        List<MealAndFood> mealsAndFoods;
+        List<Meal> meals;
+        List<Food> foods;
+        
         KiloRepository kilo;
         public UserScreen(User user)
         {
             InitializeComponent();
             this.user = user;
             activityRepository = new ActivityRepository();
+            mealRepository = new MealRepository();
+            foodRepository = new FoodReporsitory();
             activities = activityRepository.GetActivity();
         }
 
@@ -40,9 +48,11 @@ namespace ABOACIDIYET
 
             lblDataTimeNow.Text = DateTime.Now.ToString("dd/MM/yyyy");
             
-            FillListBox();
+
             FillComboBox();
-        
+            FillListBox();
+            FillFlowLayout();
+
             cbActivityTime.SelectedIndex = 0;
         }
 
@@ -74,6 +84,46 @@ namespace ABOACIDIYET
                 }
             }
         }
+
+
+
+        void FillFlowLayout()
+        {
+            meals = mealRepository.GetByUserIdThatDay(user.UserID, DateTime.Now.Date);
+            
+            flowLayoutPanel1.SuspendLayout();
+            foreach (Meal ogun in meals)
+            {
+                mealsAndFoods = mealRepository.GetMealAndFoodByMealId(ogun.MealID);
+                ListView listView = new ListView();
+                listView.View = View.Details;
+                listView.Columns.Add("Yemek", 60, HorizontalAlignment.Left);
+                listView.Columns.Add("Porsiyon", 40, HorizontalAlignment.Left);
+                listView.Columns.Add("Porsiyon Tipi", 20, HorizontalAlignment.Left);
+                listView.Columns.Add("Kalorisi", 40, HorizontalAlignment.Left);
+                listView.Columns.Add("Kategori", 120, HorizontalAlignment.Left);
+                listView.Size = new Size(320, 100);
+                foreach (MealAndFood ogunlerVeYiyecekler in mealsAndFoods)
+                {
+
+                    Food food = foodRepository.GetByFoodId(ogunlerVeYiyecekler.FoodID);
+                    ListViewItem lvi = new ListViewItem();
+                    lvi.Text = food.FoodName;
+                    lvi.SubItems.Add(food.Portion.ToString());
+                    lvi.SubItems.Add(food.PortionType.ToString());
+                    lvi.SubItems.Add(food.FoodCalorie.ToString());
+                    lvi.SubItems.Add(food.Category.CategoryName);
+                    listView.Items.Add(lvi);
+                }
+                flowLayoutPanel1.Controls.Add(listView);
+            }
+
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.PerformLayout();
+        }
+
+
         void FillTargetsLabel()
         {
             //güncel hedef çekilmeli

@@ -30,6 +30,13 @@ namespace Access.Repositories
             return db.Meals.Where(a => a.UserID == userID).ToList();
         }
 
+        public List<Meal> GetByUserIdThatDay(int userID,DateTime date)
+        {
+            DateTime tarih1 = date;
+            DateTime tarih2 = tarih1.AddDays(1);
+            return db.Meals.Where(a => a.UserID == userID && a.MealTime >= tarih1 && a.MealTime <= tarih2).ToList();
+        }
+
         /// <summary>
         /// UserId ye göre en son öğünü getirir
         /// </summary>
@@ -51,15 +58,28 @@ namespace Access.Repositories
         {
             return db.MealsAndFoods.Where(a => a.FoodID == foodID).ToList();
         }
+
+
+        public List<MealAndFood> GetMealAndFoodByMealId(int mealID)
+        {
+            return db.MealsAndFoods.Where(a => a.MealID == mealID).ToList();
+        }
+
+
+
         /// <summary>
         /// ÖğünId ye göre öğün dön
         /// </summary>
         /// <param name="mealID"></param>
-        /// <returns></returns>
-        public Meal GetByMealId(int mealID)
+        /// <returns></returns>        
+        public Meal GetByMealByMealId(int mealID)
         {
             return db.Meals.Find(mealID);
         }
+
+
+
+
 
         /// <summary>
         /// Öğünler ve Gıdalar ara tablosu kaydı ekleme
