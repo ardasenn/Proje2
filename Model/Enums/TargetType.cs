@@ -8,9 +8,9 @@ namespace ABOACIDIYET.Enums
 {
     public enum TargetType
     {
-        GainKilo=1,
-        LoseKilo,
-        StableKilo
+        KiloAlma=1,
+        KiloVerme,
+        SabitKilo
 
     }
 }

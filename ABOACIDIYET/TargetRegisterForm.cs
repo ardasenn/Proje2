@@ -14,56 +14,78 @@ using System.Windows.Forms;
 namespace ABOACIDIYET
 {
     public partial class TargetRegisterForm : Form
-    {
+    { User user;
         TargetRepository targetRepository;
-        public TargetRegisterForm() // userıd gelmeli
+        public TargetRegisterForm(User _user) // userıd gelmeli
         {
             InitializeComponent();
-            targetRepository = new TargetRepository();  
+            user=_user;
+            targetRepository = new TargetRepository();
         }
         private void TargetRegisterForm_Load(object sender, EventArgs e)
         {
+            RefreshComboBox();
+            FillListView();
+        }
+        void RefreshComboBox()
+        {
             cmbTarget.Items.Clear();
             cmbTarget.Items.AddRange(Enum.GetNames(typeof(TargetType)));
-
-            //cmbTarget.DataSource = targetRepository.GetTargets();
-            //cmbTarget.DisplayMember = "TargetType"; //??
-            //cmbTarget.ValueMember = "TargetID";
-
-            
         }
-
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (lvTargets.SelectedItems.Count != -1)
+            if (lvNewTarget.SelectedItems.Count <=0)
             {
                 MessageBox.Show("Lütfen silmek istediğiniz hedefinizi seçiniz");
                 return;
             }
-            int targetId = Convert.ToInt32(cmbTarget.SelectedValue);
-            int affRow = targetRepository.Delete(targetId);
-            MessageBox.Show(affRow > 0 ? " Silindi" : "Hata Oluştu");
-
-            ListViewByFoodId();
+            int targetId = lvNewTarget.SelectedItems[0].Index;
+            lvNewTarget.Items[targetId].Remove();
         }
-        void ListViewByFoodId()
+        void InsertToListView()
         {
-            int targetId = Convert.ToInt32(cmbTarget.SelectedValue);
-            List<Target> targets = targetRepository.GetByTargets(targetId);
+            Target target = new Target();            
+            target.TargetType = (TargetType)Enum.Parse(typeof(TargetType),cmbTarget.SelectedItem.ToString());
+            target.StartDate = dtpStartDate.Value;
+            target.EndDate = dtpEndDate.Value;
+            target.UserID=user.UserID; 
 
-            lvTargets.Items.Clear();
-            foreach (var item in targets)
+            ListViewItem lvi = new ListViewItem();
+            lvi.Text = target.TargetType.ToString();
+            lvi.SubItems.Add(target.StartDate.ToString());
+            lvi.SubItems.Add(target.EndDate.ToString());
+            lvi.Tag = target;
+            lvNewTarget.Items.Add(lvi);
+        }
+        void FillListView()
+        {
+           List<Target> targetList=targetRepository.GetByUserId(user.UserID);
+            ListViewItem lvi = new ListViewItem();
+            foreach (Target item in targetList)
             {
-                ListViewItem lvi = new ListViewItem();
                 lvi.Text = item.TargetType.ToString();
                 lvi.SubItems.Add(item.StartDate.ToString());
                 lvi.SubItems.Add(item.EndDate.ToString());
-                
-
-                lvTargets.Items.Add(lvi);
+                lvi.Tag = item;
+                lvTargetsScreen.Items.Add(lvi);
             }
         }
-
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            if (cmbTarget.SelectedIndex != -1 )
+            {
+                InsertToListView();
+            }
+            else MessageBox.Show("Lütfen hedef türü ve aralığı seçiniz..");
+        }
+        
+        private void button3_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < lvNewTarget.Items.Count; i++)
+            {
+                Target target = (Target)lvNewTarget.Items[i].Tag;
+                if (targetRepository.Insert(target) >= 1) MessageBox.Show("Kayıt işlemi başarılı");
+            }
+        }
     }
-    
 }

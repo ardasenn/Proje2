@@ -52,7 +52,7 @@ namespace ABOACIDIYET
         {
             if (cmbCategory.SelectedIndex !=-1 && cmbFood.SelectedIndex !=-1) // yani kategori ve besinden değer seçildiyse
             {
-                ListViewByFoodId();
+                InsertToListView();
                 
             }
             else MessageBox.Show("Lütfen Kategori ve Besin Seçiniz");
@@ -69,7 +69,7 @@ namespace ABOACIDIYET
             lvFoodAndMeal.Items[seciliYemek].Remove();
 
         }
-        void ListViewByFoodId()
+        void InsertToListView()
         {
             int foodId = Convert.ToInt32(cmbFood.SelectedValue);
             Food food = foodReporsitory.GetByFoods(foodId);
