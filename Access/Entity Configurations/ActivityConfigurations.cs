@@ -13,8 +13,9 @@ namespace Access.Entity_Configurations
         public ActivityConfigurations()
         {
             Property(a => a.ActivityName).IsRequired().HasMaxLength(100);
-            Property(a => a.BurnedCaloriInActivity).IsRequired();
+            Property(a => a.BurnedCalorieInActivity).IsRequired();
 
+            HasMany(a => a.UserAndActivities).WithRequired(a => a.Activity).HasForeignKey(a => a.ActivityID);
         }
     }
 }

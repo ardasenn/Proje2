@@ -10,6 +10,8 @@ namespace ABOACIDIYET.Entities
 {
     public class MealAndFood
     {
+
+        public int MealAndFoodID { get; set; }
         //[Key, Column(Order = 0)]
         public int MealID { get; set; }
         //[Key, Column(Order = 1)]
@@ -18,6 +20,5 @@ namespace ABOACIDIYET.Entities
         public virtual Meal Meal { get; set; }
         public virtual Food Food { get; set; }
 
-        public int PortionCount { get; set; }
     }
 }

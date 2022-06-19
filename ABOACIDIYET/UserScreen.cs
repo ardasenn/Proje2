@@ -19,11 +19,11 @@ namespace ABOACIDIYET
             InitializeComponent();
             this.user = user;
         }
-
         private void UserScreen_Load(object sender, EventArgs e)
         {
             
         }
+
 
 
     }

@@ -24,6 +24,7 @@ namespace Access.Entity_Configurations
             HasMany(a => a.Kilos).WithRequired(a => a.User).HasForeignKey(a => a.UserID);
             HasMany(a => a.Meals).WithRequired(a => a.User).HasForeignKey(a => a.UserID);
             HasMany(a => a.Targets).WithRequired(a => a.User).HasForeignKey(a => a.UserID);
+            HasMany(a => a.UserAndActivities).WithRequired(a => a.User).HasForeignKey(a => a.UserID);
         }
     }
 }

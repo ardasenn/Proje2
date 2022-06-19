@@ -12,3 +12,9 @@ D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\Model\obj\Debug\Model.csproj.AssemblyRefere
 D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\Model\obj\Debug\Model.dll
 D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\Model\obj\Debug\Model.pdb
+D:\Projects\PROJE4\Model\bin\Debug\Model.dll
+D:\Projects\PROJE4\Model\bin\Debug\Model.pdb
+D:\Projects\PROJE4\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\Projects\PROJE4\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Projects\PROJE4\Model\obj\Debug\Model.dll
+D:\Projects\PROJE4\Model\obj\Debug\Model.pdb

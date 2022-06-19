@@ -13,7 +13,8 @@ namespace Access.Entity_Configurations
         public MealConfigurations()
         {
             HasKey(a => a.MealID);
-            Property(a => a.MealName).IsRequired().HasMaxLength(100);
+            Property(a => a.MealName).IsRequired();
+            HasMany(a => a.MealAndFoods).WithRequired(a => a.Meal).HasForeignKey(a => a.MealID);
         }
     }
 }

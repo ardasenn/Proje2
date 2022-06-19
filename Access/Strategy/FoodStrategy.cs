@@ -7,6 +7,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Access.Strategy
 {
@@ -62,7 +63,9 @@ namespace Access.Strategy
             categories.Add(new Category("Yemekler ve Öğünler", "Bu kategori, lazanya gibi ev yapımı akşam yemeklerini, pişmiş olarak satılan ve evde sadece ısıtmanız gereken hazır yemekleri ve Pekin ördeği ve Çin böreği gibi restoran yemeklerini içermektedir. Yemekler, birkaç malzemenin bir arada pişirilmesiyle hazırlandıkları için besin değerleri oldukça farklılık gösterir. Bir yemek yapılırken farklı besin maddeleri bir araya getirilir ve böylece dengeli bir beslenmenin gereksinimlerini karşılamak üzere karbonhidratlardan, yağlardan ve proteinden oluşan bir karışım meydana gelir. Yemekler, birden fazla malzemeden yapıldıkları için çoğunlukla kalori yoğundurlar. Bu sayfada yer alan kalori cetvelinde de görüldüğü üzere bir porsiyon ana ya da yan yemek günlük kalorinin önemli bir miktarını içermektedir. Bir yemeği hazırlarken her bir malzemenin besin değerini tek tek gözden geçirmek zor olabilir; ancak bir kalori sayacı programı (ör. YAZIO) veya tarif (reçete) analizcisi ile her bir porsiyonda ne kadar kalori olduğunu ve besin değerlerini öğrenebilirsiniz. Bu araçlar, marketlerde satılan paketlenmiş hazır yemekler satın almak yerine, evde sağlıklı yemekler yapmanızı kolaylaştırmaktadır. Ayrıca internette de hemen hemen her yemek için kalori tabloları bulunmaktadır. Yapmış olduğunuz yemeğin kalorisini herhangi bir kalori cetvelinden bulamıyorsanız, malzemelerinin kalorilerini hesaplayabilirsiniz.", "https://www.kaloricetveli.org/wp-content/uploads/yemekler-ve-oeguenler.jpg"));
             categories.Add(new Category("Yoğurtlar", "Bu kalın ve kremamsı süt ürünü, hayvansal veya bitki temelli sütlerin belirli bakteri kültürleri ile fermente edilmesi ile üretilir. Yoğurt, genel olarak inek sütünden elde edildiği için kalsiyum ve proteinden zengin besin değerine sahiptir. Daha fazla bilgi için süt ve süt ürünleri kalori cetvelini inceleyin. Fermantasyon işlemi yoğurda keskin bir aroma verir ayrıca yoğurdun içerdiği bakteriler sindirim sistemi için son derece yararlıdır. Aktif kültürler içeren yoğurt, sağlıklı bir bağışıklık sistemi için faydalı olabilir. Yoğurtta aktif kültür olup olmadığını ürünün paketi üzerinde, besin etiketi yanında bir not olarak görebilirsiniz. Yoğurt tek başına son derece besleyici olsa da, ilave şeker eklenerek aromalı türleri ve parfe halinde sunulan türleri de bulunmaktadır. İlave şekerli yoğurdun kalorisini, paketin üzerinde yer alan kalori tablosundan görebilirsiniz. Yoğurt, süt ürününden gelen doğal şekeri halihazırda içermektedir ancak ilave olarak basit masa şekeri veya şurup gibi bir tatlandırıcı içerip içermediğini paket üzerinden kontrol edin. Bu yaklaşık bir çay kaşığı tutarındaki ilave şeker yoğurdun kalorisini ciddi oranda artırmasa da, kan şekeri seviyesi üzerinde olumsuz etkisi olacaktır. Yoğurdu meyveli veya aromalı yemek istiyorsanız, sade yoğurt alın, içine taze meyveler, granola, şurup ve istediğiniz başka bir doğal tatlandırıcı ekleyin. Böylece alacağınız kalori ve şeker miktarını kontrol edebilir, ne kadar kalori aldığınızı da ilave malzemelerin kalori cetvellerinden öğrenerek hesaplayabilirsiniz. Yoğurt, pasta, kek, hamur işi gibi yiyeceklerin yapımında tereyağ veya sıvı yağın ikamesi olarak kullanılabilir. Ayrıca, mayonez veya eksi krema yerine de kullanılması tavsiye edilmektedir. Yoğurt, içerdiği yağdan ötürü çok fazla kaloriye sahip olsa da, yağsız türleri de günümüzde son derece yaygın şekilde bulunabilmektedir.", "https://www.kaloricetveli.org/wp-content/uploads/yogurt.jpg"));
             categories.Add(new Category("Yulaf Ezmesi, Müsli ve Tahıl Gevrekleri", "Yulaf ezmesi, müsli ve granola gibi kahvaltılık gevreklerin en sık temel bileşenidir. Preslenmiş yulaf ya da geleneksel yulaf olarak da adlandırılan sade yulaf ezmesi çok sayıda kompleks karbonhidrat, bazı besleyici lifler ve önemli miktarda A ve B6 vitamini ve kalsiyum içerdiği için yüksek besleyici değere sahiptir. Ayrıca, pişmiş yulaf ezmesinin bir bardağı (250 ml) önerilen günlük demir miktarının %77’sini sağlar. Aşağıdaki kalori cetveli ayrıca Kellog’s, Psot ve Kashi gibi popüler markaları içeren birçok kutulanmış kahvaltılık gevreğin kalorisini göstermektedir. Bu ürünlerdeki kaloriler, temelde yulaf ezmesine benzer şekilde karbonhidrat biçimindedir. Bu gevreklerin üretiminde kullanılan diğer hububat arasında mısır, buğday, pirinç ve arpa bulunmaktadır. Multigrain Cheerios gibi bazı gevrekler, temel gıda maddelerinin sağlık yararlarını tek seferde sunmak üzere hububat karışımları kullanır. Yulaf ezmesi, müsli ve gevrekler her ne kadar kompleks karbonhidratlar ve lifler yönünden zenginlerse de, bu ürünlerin şeker kaynaklı ek kaloriler içerecek şekilde paketlenmiş olabilecekleri bilinmelidir. Örneğin, tatlandırılmış hazır yulaf ezmesi paket başına 15 gram şeker içerebilir. Kesin kalori miktarının saptanması için besin cetvellerinin dikkatlice incelenmesinde fayda bulunmaktadır. Bu hususu ve kahvaltılık gevreklerin hangi vitamin ve minerallerle güçlendirildiğini içeren diğer beslenme bilgilerini öğrenmek için besin etiketlerini gözden geçirin. Ayrıca, süt ilaveli tahıl gevreği veya müslinin kalorisinin, sütün türüne göre değişeceğini unutmayın. Porsiyonun kalorisini hesaplarken, sütler için kalori tablosunu incelemenizde fayda var.", "https://www.kaloricetveli.org/wp-content/uploads/yulaf-ezmesi-muesli-ve-tahil-gevrekleri.jpg"));
+            
             context.Categories.AddRange(categories);
+            context.SaveChanges();
 
             //YİYECEKLER
             List<Food> foods = new List<Food>();
@@ -1870,12 +1873,103 @@ namespace Access.Strategy
             foods.Add(new Food("Yulaf Ezmesi", 100, PortionType.g, 375, 44));
 
             context.Foods.AddRange(foods);
+            context.SaveChanges();
+
+            List<Activity> activities = new List<Activity>();
+            activities.Add(new Activity("Archery", 4.3));
+            activities.Add(new Activity("Athletic Training, general", 6));
+            activities.Add(new Activity("BASE Jumping", 3.5));
+            activities.Add(new Activity("BMX Biking", 8.5));
+            activities.Add(new Activity("Badminton, competitive", 7));
+            activities.Add(new Activity("Badminton, general", 5.5));
+            activities.Add(new Activity("Baseball", 2.5));
+            activities.Add(new Activity("Basketball, competitive", 8));
+            activities.Add(new Activity("Basketball, general", 6));
+            activities.Add(new Activity("Beach Volleyball", 8));
+            activities.Add(new Activity("Biathlon", 10));
+            activities.Add(new Activity("Billiards", 2.5));
+            activities.Add(new Activity("Bowling", 3.8));
+            activities.Add(new Activity("Boxing, competitive", 12.8));
+            activities.Add(new Activity("Boxing, punching bag", 5.5));
+            activities.Add(new Activity("Boxing, sparring", 7.8));
+            activities.Add(new Activity("Broomball", 7));
+            activities.Add(new Activity("Bungee Jumping", 3.5));
+            activities.Add(new Activity("Canoeing, competitive", 12));
+            activities.Add(new Activity("Canoeing, general", 4));
+            activities.Add(new Activity("Canoeing, wildwater", 3.3));
+            activities.Add(new Activity("Car Racing", 8.5));
+            activities.Add(new Activity("Cheerleading", 6));
+            activities.Add(new Activity("Chopping Wood", 4.5));
+            activities.Add(new Activity("Circuit Training, cardiovascular", 4.3));
+            activities.Add(new Activity("Circuit Training, strength", 8));
+            activities.Add(new Activity("Cleaning, Household Tasks ", 3.3));
+            activities.Add(new Activity("Climbing, competitive", 8));
+            activities.Add(new Activity("Climbing, general", 5.8));
+            activities.Add(new Activity("Cricket", 4.8));
+            activities.Add(new Activity("Croquet", 3.3));
+            activities.Add(new Activity("Curling", 4));
+            activities.Add(new Activity("Cycling, commute", 5.8));
+            activities.Add(new Activity("Cycling, fast", 7.8));
+            activities.Add(new Activity("Cycling, general", 6.4));
+            activities.Add(new Activity("Cycling, leisurely", 4));
+            activities.Add(new Activity("Dancing: Aerobic", 7.3));
+            activities.Add(new Activity("Dancing: Ballet, Modern, Jazz", 5));
+            activities.Add(new Activity("Dancing: Caribbean", 3.5));
+            activities.Add(new Activity("Dancing: Cultural Celebrations", 4.5));
+            activities.Add(new Activity("Dancing: Cumbia", 6.5));
+            activities.Add(new Activity("Dancing: Disco, Folk, Polka", 7.8));
+            activities.Add(new Activity("Dancing: Merengue", 7.3));
+            activities.Add(new Activity("Dancing: Salsa, Flamenco, Swing", 4.5));
+            activities.Add(new Activity("Dancing: Tango, Mambo, Cha-Cha", 3));
+            activities.Add(new Activity("Dancing: Waltz, Foxtrot, Tango", 3));
+            activities.Add(new Activity("Darts", 4));
+            activities.Add(new Activity("Diving", 7));
+            activities.Add(new Activity("Dog Sledding", 5));
+            activities.Add(new Activity("Dog Walking", 3.5));
+            activities.Add(new Activity("Elliptical, Crosstrainer", 5));
+            activities.Add(new Activity("Felling Trees", 5.3));
+            activities.Add(new Activity("Fencing", 6));
+            activities.Add(new Activity("Field Hockey", 7.8));
+            activities.Add(new Activity("Fishing", 1.8));
+            activities.Add(new Activity("Football, competitive", 8));
+            activities.Add(new Activity("Football, general", 4));
+            activities.Add(new Activity("Frisbee", 3));
+            activities.Add(new Activity("Golf", 4.8));
+            activities.Add(new Activity("Gym Exercise", 5.5));
+            activities.Add(new Activity("Gymnastics", 3.8));
+            activities.Add(new Activity("Hacky Sack", 4));
+            activities.Add(new Activity("Handball, competitive", 10));
+            activities.Add(new Activity("Handball, general", 8));
+            activities.Add(new Activity("Hang Gliding", 3.5));
+            activities.Add(new Activity("High Ropes Course", 4));
+            activities.Add(new Activity("Hiking, advanced", 6.3));
+            activities.Add(new Activity("Hiking, general", 4.3));
+            activities.Add(new Activity("Hockey", 7.8));
+            activities.Add(new Activity("Home Exercise", 3.8));
+            activities.Add(new Activity("Home Repair", 3.5));
+            activities.Add(new Activity("Horse Riding, gallop", 7.3));
+            activities.Add(new Activity("Horse Riding, general", 5.5));
+            activities.Add(new Activity("Horse Riding, jumping", 9));
+            activities.Add(new Activity("Horse Riding, trot", 5.8));
+            activities.Add(new Activity("Hunting", 5));
+            activities.Add(new Activity("Ice Dancing", 12));
+            activities.Add(new Activity("Ice Hockey, competitive", 10));
+            activities.Add(new Activity("Ice Hockey, general", 8));
+            activities.Add(new Activity("Ice Skating, competitive", 9));
+            activities.Add(new Activity("Ice Skating, general", 5.5));
+            activities.Add(new Activity("Indoor Cycling, Spinning (100 watts)", 6.8));
+            activities.Add(new Activity("Indoor Cycling, Spinning (150 watts)", 8.8));
+            activities.Add(new Activity("Indoor Cycling, Spinning (200 watts)", 11));
+            activities.Add(new Activity("Indoor Cycling, Spinning (50 watts)", 3.5));
+
+            context.Activities.AddRange(activities);
+            context.SaveChanges();
 
             //üretilen kişilerin hep aynı değerlere sahip olmasını sağlıyor
             Randomizer.Seed = new Random(1337);
 
             //bogus nuget paketiyle rastgele kişi üretiyor
-            Faker<User> testUsers = new Faker<User>()
+            Faker<User> testUsers = new Faker<User>(locale: "tr")
 
                 //Use an enum outside scope.
                 .RuleFor(u => u.Gender, f => f.PickRandom<Gender>())
@@ -1887,7 +1981,7 @@ namespace Access.Strategy
                 .RuleFor(u => u.Height, f => f.Random.Number(150, 220))
                 .RuleFor(u => u.Password, f => f.Internet.Password())
                 .RuleFor(u => u.Birthdate, f => f.Person.DateOfBirth)
-                .RuleFor(u => u.Country, f => f.Address.Country())
+                .RuleFor(u => u.Country, f => "Türkiye")
                 .RuleFor(u => u.City, f => f.Address.City());
 
             //ürettiği rastgele kişinin gerekli değerlerini admin olarak düzeltiyor
@@ -1896,12 +1990,13 @@ namespace Access.Strategy
             user.LastName = "Admin";
             user.Email = "admin@bilgeadam.com";
             user.Password = "admin";
-            user.Birthdate = DateTime.Now;
+            user.Birthdate = DateTime.Now.AddYears(-10);
             user.UserType = UserType.Admin;
-            context.Users.Add(user);
 
-            
-            testUsers = new Faker<User>()
+            context.Users.Add(user);
+            context.SaveChanges();
+
+            testUsers = new Faker<User>(locale: "tr")
             //Use an enum outside scope.
             .RuleFor(u => u.Gender, f => f.PickRandom<Gender>())
 
@@ -1912,23 +2007,139 @@ namespace Access.Strategy
             .RuleFor(u => u.Height, f => f.Random.Number(150, 220))
             .RuleFor(u => u.Password, f => f.Internet.Password())
             .RuleFor(u => u.Birthdate, f => f.Person.DateOfBirth)
-            .RuleFor(u => u.Country, f => f.Address.Country())
+            .RuleFor(u => u.Country, f => "Türkiye")
             .RuleFor(u => u.City, f => f.Address.City())
             .RuleFor(u => u.UserType, f=> UserType.User);
                 
             List<User> users = new List<User>();
-            users = testUsers.Generate(1000);
+            users = testUsers.Generate(50);
+
             context.Users.AddRange(users);
+            context.SaveChanges();
 
             //Activity activities = new Faker<Activity>()
             //    .RuleFor(a => a.ActivityName, f => f);
 
+            int Ids = 2;
+            Faker<Kilo> kilo = new Faker<Kilo>()
+                .RuleFor(k => k.Weight, f => f.Random.Number(30,300))
+                .RuleFor(k => k.UserID, f => Ids++)
+                .RuleFor(k => k.CreationDate, f => f.Date.Past(1,DateTime.Now));
+            
+            List<Kilo> kilos = new List<Kilo>();
+            kilos = kilo.Generate(50);
 
-
-
+            context.Kilos.AddRange(kilos);
             context.SaveChanges();
 
-            
+            Faker<Kilo> kilo2;
+            List<Kilo> kilos2 = new List<Kilo>();
+            for (int Ids2 = 2; Ids2 <= 51; Ids2++)
+            {
+                DateTime tarih = context.Kilos.Where(x => x.UserID == Ids2).OrderByDescending(x => x.CreationDate).FirstOrDefault().CreationDate;
+                DateTime tarih2 = tarih;
+                int kalanGunler = (DateTime.Now - tarih).Days;
+                for (int i = kalanGunler; i > 0; i--)
+                {                    
+                    Random r = new Random();
+                    int rInt = r.Next(1, 3);
+                    i -= rInt;
+                    tarih2 = tarih2.AddDays(rInt);
+                    if (tarih2 <= DateTime.Now)
+                    {
+                        kilo2 = new Faker<Kilo>()
+                        .RuleFor(k => k.Weight, f =>
+                        {
+                            int gilo = context.Kilos.Where(x => x.UserID == Ids2).OrderByDescending(x => x.CreationDate).FirstOrDefault().Weight;
+                            Random g = new Random();
+                            return gilo = g.Next(gilo-1,gilo+2);
+                        })
+                        .RuleFor(k => k.UserID, f => Ids2)
+                        .RuleFor(k => k.CreationDate, f => tarih2);
+                        kilos2.Add(kilo2);
+                    }
+                }
+            }
+
+            context.Kilos.AddRange(kilos2);
+            context.SaveChanges();
+
+
+            Faker<UserAndActivity> userAndActivity;
+            List<UserAndActivity> usersAndActivities = new List<UserAndActivity>();
+            for (int Ids2 = 2; Ids2 <= 51; Ids2++)
+            {
+                List<DateTime> tarihlistesi = context.Kilos.Where(x => x.UserID == Ids2).Select(x=> x.CreationDate).ToList();
+                foreach (DateTime gun in tarihlistesi)
+                {
+                    Random r = new Random();
+                    for (int i = r.Next(1,4); i >= 0; i--)
+                    {
+                        userAndActivity = new Faker<UserAndActivity>()
+                        .RuleFor(ua => ua.UserID, f => Ids2)
+                        .RuleFor(ua => ua.ActivityID, f => {
+
+                            var activity = usersAndActivities.Where(x => x.UserID == Ids2 && x.ActivityDate == gun).Select(x => x.ActivityID).ToList();
+                            int activiteSayisi;
+                            do
+                            {
+                                activiteSayisi = f.Random.Number(1,activities.Count);
+                            } while (activity.Contains(activiteSayisi));
+                            
+                            return activiteSayisi;
+                        
+                        })
+                        .RuleFor(ua => ua.ActivityDuration, f => f.Random.Number(300))
+                        .RuleFor(ua => ua.ActivityDate, f => gun);
+
+                        usersAndActivities.Add(userAndActivity);
+                    }
+                }
+            }
+
+            context.UsersAndActivities.AddRange(usersAndActivities);
+            context.SaveChanges();
+
+
+            Faker<Meal> meal;
+            List<Meal> meals = new List<Meal>();
+            for (int Ids2 = 2; Ids2 <= 51; Ids2++)
+            {
+                List<DateTime> tarihlistesi = context.Kilos.Where(x => x.UserID == Ids2).Select(x => x.CreationDate).ToList();
+                foreach (DateTime gun in tarihlistesi)
+                {
+                    Random r = new Random();
+                    for (int i = r.Next(1, 4); i >= 0; i--)
+                    {
+                        meal = new Faker<Meal>()
+                        .RuleFor(m => m.UserID, f => Ids2)
+                        .RuleFor(m => m.MealName, f =>
+                        {
+
+                            List<MealType> ogunler = meals.Where(x => x.UserID == Ids2 && x.MealTime == gun).Select(x => x.MealName).ToList();
+                            MealType ogun;
+                            do
+                            {
+                                ogun = f.PickRandom<MealType>();
+                            } while (ogunler.Contains(ogun));
+
+                            return ogun;
+                        })
+                        .RuleFor(m => m.MealTime, f => gun);
+
+                        meals.Add(meal);
+                    }
+                }
+            }
+
+            context.Meals.AddRange(meals);
+            context.SaveChanges();
+
+
+
+
+
+
         }
     }
 }
