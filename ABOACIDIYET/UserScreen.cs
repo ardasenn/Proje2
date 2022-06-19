@@ -123,6 +123,12 @@ namespace ABOACIDIYET
 
         }
 
-
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TargetRegisterForm form = new TargetRegisterForm(user);
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
     }
 }
