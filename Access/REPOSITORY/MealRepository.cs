@@ -29,11 +29,24 @@ namespace Access.Repositories
         {
             return db.Meals.Where(a => a.UserID == userID).ToList();
         }
+
+        /// <summary>
+        /// UserId ye göre en son öğünü getirir
+        /// </summary>
+        /// <param name="userID"></param>
+        /// <returns></returns>
+        public Meal LastMealByUserId(int userID)
+        {
+            return db.Meals.Where(a => a.UserID == userID).OrderByDescending(a=>a.MealTime).FirstOrDefault();
+        }
+
+
         /// <summary>
         /// yemekID ye göre öğünleri listele
         /// </summary>
         /// <param name="foodID"></param>
         /// <returns></returns>
+        /// 
         public List<MealAndFood> GetByFoodId(int foodID)
         {
             return db.MealsAndFoods.Where(a => a.FoodID == foodID).ToList();
@@ -47,6 +60,19 @@ namespace Access.Repositories
         {
             return db.Meals.Find(mealID);
         }
+
+        /// <summary>
+        /// Öğünler ve Gıdalar ara tablosu kaydı ekleme
+        /// </summary>
+        /// <param name="meal"></param>
+        /// <returns></returns>
+        public int InsertMealAndFood(MealAndFood mealAndFood)
+        {
+            db.MealsAndFoods.Add(mealAndFood);
+            int affRows = db.SaveChanges();
+            return affRows;
+        }
+
         /// <summary>
         /// Öğün ekleme
         /// </summary>
