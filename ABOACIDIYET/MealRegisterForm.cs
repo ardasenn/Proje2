@@ -125,9 +125,7 @@ namespace ABOACIDIYET
                     Food food = (Food)lvFoodAndMeal.Items[i].Tag;
                     MealAndFood mealAndFood = new MealAndFood();
                     mealAndFood.MealID = meal.MealID;
-                    MessageBox.Show(meal.MealID.ToString());
                     mealAndFood.FoodID = food.FoodID;
-                    MessageBox.Show(food.FoodID.ToString());
                     mealRepository.InsertMealAndFood(mealAndFood);
                 }
             }
@@ -137,3 +135,4 @@ namespace ABOACIDIYET
         }
     }
 }
+
