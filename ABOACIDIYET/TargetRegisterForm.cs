@@ -16,7 +16,5 @@ namespace ABOACIDIYET
         {
             InitializeComponent();
         }
-
-
     }
 }

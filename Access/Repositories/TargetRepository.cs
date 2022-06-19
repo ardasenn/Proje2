@@ -14,9 +14,9 @@ namespace Access.Repositories
         {
             db = new AboDbContext();
         }
-        public List<Target> GetByUserId(int userID)
+        public Target GetByUserId(int userID)
         {
-            return db.Targets.Where(a => a.UserID == userID).ToList();
+            return db.Targets.Where(a => a.UserID == userID).OrderByDescending(a=>a.StartDate).FirstOrDefault();
 
         }
         public int Insert(Target target)

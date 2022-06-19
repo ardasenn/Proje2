@@ -46,7 +46,7 @@ namespace ABOACIDIYET.Entities
             get { return email; }
             set
             {
-                if (!(value.Contains("@") && value.EndsWith(".com"))) throw new Exception("Geçerli bir email adresi giriniz");//neden || neden && değil ?
+                if (!(value.Contains("@") && value.EndsWith(".com"))) throw new Exception("Geçerli bir email adresi giriniz");
                 else email = value;
             }
         }
@@ -58,15 +58,13 @@ namespace ABOACIDIYET.Entities
             get { return height; }
             set
             {
-                if (value.ToString().Length <= 3 && value.ToString().All(char.IsNumber) && value.ToString().Length > 2 )
+                if (value.ToString().Length <= 3 && value.ToString().All(char.IsNumber) && value.ToString().Length > 2)
                 {
                     height = value;
-                }
+                }              
                 else { throw new Exception("Boyunuz mantıklı bir değer olmak zorunda"); }
             }
         }
-
-
         private string password;
 
         public string Password

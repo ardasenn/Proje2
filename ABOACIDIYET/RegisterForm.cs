@@ -33,7 +33,7 @@ namespace ABOACIDIYET
             int affRow = 0;
             try
             {
-                if (!txtHeight.Text.All(char.IsDigit) || string.IsNullOrEmpty(txtHeight.Text)) throw new Exception("Hatalı bir boy değeri girdiniz.");                
+                                
                 if (txtPassword.Text != txtPasswordAgain.Text)
                 {
                     throw new Exception("Şifreniz uyuşmamakta. Lütfen tekrar deneyiniz");                   
@@ -49,8 +49,8 @@ namespace ABOACIDIYET
                     Country = txtCountry.Text,
                     City = txtCity.Text,
                     Password = txtPassword.Text,
-
                 };
+               
                 affRow = userRepository.Insert(user);
             }
             catch (Exception a)
