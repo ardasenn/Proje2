@@ -21,29 +21,52 @@ namespace ABOACIDIYET
         ActivityRepository activityRepository;
         List<Activity> activities;
         List<Target> targets;
-        List<UserAndActivity> usersActivities;
+        List<UserAndActivity> usersAndActivities;
         KiloRepository kilo;
         public UserScreen(User user)
         {
             InitializeComponent();
             this.user = user;
+            activityRepository = new ActivityRepository();
+            activities = activityRepository.GetActivity();
         }
 
         private void UserScreen_Load(object sender, EventArgs e)
         {
-            FillComboBox();
+            
+
             lblDataTimeNow.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            
+            FillListBox();
+            FillComboBox();
+        
+            cbActivityTime.SelectedIndex = 0;
         }
         void FillComboBox()
         {
-            activities=activityRepository.GetActivity();
+
             cbActivity.DataSource = activities;
             cbActivity.DisplayMember = "ActivityName";
+            cbActivity.ValueMember = "BurnedCalorieInActivity";
             for (int i = 30; i < 210; i+=30)
             {
                 cbActivityTime.Items.Add(i);
             }
             //Raporlar kısmı var beklettim
+        }
+
+        void FillListBox()
+        {
+            listBox1.Items.Clear();
+            usersAndActivities = activityRepository.GetByUserId(user.UserID,DateTime.Today);
+            if (usersAndActivities != null)
+            {
+                for (int i = 0; i < usersAndActivities.Count; i++)
+                {
+                    
+                    listBox1.Items.Add(activities[usersAndActivities[i].ActivityID-1].ActivityName);
+                }
+            }
         }
         void FillTargetsLabel()
         {
@@ -68,13 +91,19 @@ namespace ABOACIDIYET
 
         private void btnAddActivity_Click(object sender, EventArgs e)
         {
-            if(cbActivity.SelectedIndex==-1)
+            if (cbActivity.SelectedIndex == -1)
             {
                 MessageBox.Show("Lütfen bir alan seçiniz");
             }
-            else if(cbActivity.SelectedIndex==0) 
+            else
+                
+            {
 
-            
+                activityRepository.InsertUserActivity(user, activities[cbActivity.SelectedIndex], Convert.ToInt32(cbActivityTime.SelectedItem));
+                FillListBox();
+            }
+
+
         }
     }
 }

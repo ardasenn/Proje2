@@ -30,3 +30,19 @@ D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\Access\bin\Debug\Bogus.xml
 D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\Access\bin\Debug\EntityFramework.xml
 D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\Access\bin\Debug\EntityFramework.SqlServer.xml
 D:\ARDA D\Arda\YAZILIM\sdfgdfs\Proje\Access\obj\Debug\Access.csproj.CopyComplete
+D:\Projects\PROJE5\Access\obj\Debug\Access.csproj.AssemblyReference.cache
+D:\Projects\PROJE5\Access\obj\Debug\Access.csproj.CoreCompileInputs.cache
+D:\Projects\PROJE5\Access\obj\Debug\Access.dll
+D:\Projects\PROJE5\Access\obj\Debug\Access.pdb
+D:\Projects\PROJE5\Access\bin\Debug\Access.dll.config
+D:\Projects\PROJE5\Access\bin\Debug\Access.dll
+D:\Projects\PROJE5\Access\bin\Debug\Access.pdb
+D:\Projects\PROJE5\Access\bin\Debug\Bogus.dll
+D:\Projects\PROJE5\Access\bin\Debug\EntityFramework.dll
+D:\Projects\PROJE5\Access\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\PROJE5\Access\bin\Debug\Model.dll
+D:\Projects\PROJE5\Access\bin\Debug\Model.pdb
+D:\Projects\PROJE5\Access\bin\Debug\Bogus.xml
+D:\Projects\PROJE5\Access\bin\Debug\EntityFramework.xml
+D:\Projects\PROJE5\Access\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\PROJE5\Access\obj\Debug\Access.csproj.CopyComplete

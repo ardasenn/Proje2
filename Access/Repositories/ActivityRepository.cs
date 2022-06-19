@@ -29,9 +29,9 @@ namespace Access.Repositories
         /// </summary>
         /// <param name="userID"></param>
         /// <returns></returns>
-        public List<UserAndActivity> GetByUserId(int userID)
+        public List<UserAndActivity> GetByUserId(int userID,DateTime tarih)
         {
-            return db.UsersAndActivities.Where(a => a.UserID == userID).ToList();
+            return db.UsersAndActivities.Where(a => a.UserID == userID && a.ActivityDate == tarih).ToList();
         }
         /// <summary>
         /// aktiviteye tıkladığımda onunla ilgili bişeyler yapabilirim
@@ -47,6 +47,24 @@ namespace Access.Repositories
         /// </summary>
         /// <param name="activity"></param>
         /// <returns></returns>
+
+        public int InsertUserActivity(User user, Activity activity, int sure)
+        {
+            UserAndActivity userAndActivity = new UserAndActivity();
+            userAndActivity.UserID = user.UserID;
+            userAndActivity.ActivityID = activity.ActivityID;
+            userAndActivity.ActivityDuration = sure;
+            userAndActivity.ActivityDate = DateTime.Now.Date;
+            db.UsersAndActivities.Add(userAndActivity);
+            int affRows = db.SaveChanges();
+            return affRows;
+        }
+        /// <summary>
+        /// aktivite silme,bulunan ıd ye göre
+        /// </summary>
+        /// <param name="meal"></param>
+        /// <returns></returns>
+
         public int Insert(Activity activity)
         {
             db.Activities.Add(activity);
