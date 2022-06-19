@@ -1,4 +1,5 @@
 ﻿using ABOACIDIYET.Entities;
+using ABOACIDIYET.Enums;
 using Access;
 using Access.Repositories;
 using System;
@@ -33,7 +34,9 @@ namespace ABOACIDIYET
 
         private void UserScreen_Load(object sender, EventArgs e)
         {
-            
+
+            cbMeal.Items.AddRange(Enum.GetNames(typeof(MealType)));
+            cbMeal.SelectedIndex = 0;
 
             lblDataTimeNow.Text = DateTime.Now.ToString("dd/MM/yyyy");
             
@@ -42,6 +45,9 @@ namespace ABOACIDIYET
         
             cbActivityTime.SelectedIndex = 0;
         }
+
+
+
         void FillComboBox()
         {
 
@@ -105,5 +111,18 @@ namespace ABOACIDIYET
 
 
         }
+
+        private void btnMealSelect_Click(object sender, EventArgs e)
+        {
+            if (cbMeal.SelectedItem != null)
+            {
+
+                MealRegisterForm mealRegisterForm = new MealRegisterForm(user, Convert.ToInt32(cbMeal.SelectedIndex)+1);
+                mealRegisterForm.ShowDialog();
+            }
+
+        }
+
+
     }
 }
