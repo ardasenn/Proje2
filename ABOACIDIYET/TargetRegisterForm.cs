@@ -21,7 +21,6 @@ namespace ABOACIDIYET
             InitializeComponent();
             targetRepository = new TargetRepository();  
         }
-
         private void TargetRegisterForm_Load(object sender, EventArgs e)
         {
             cmbTarget.Items.Clear();
@@ -64,6 +63,7 @@ namespace ABOACIDIYET
                 lvTargets.Items.Add(lvi);
             }
         }
+
     }
     
 }

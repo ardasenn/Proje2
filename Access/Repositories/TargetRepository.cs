@@ -22,7 +22,7 @@ namespace Access.Repositories
         }
         public List<Target> GetByUserId(int userID)
         {
-            return db.Targets.Where(a => a.UserID == userID).ToList();
+            return db.Targets.Where(a => a.UserID == userID).OrderByDescending(a=>a.StartDate).FirstOrDefault();
 
         }
         public List<Target> GetByTargets(int targetId)

@@ -63,6 +63,7 @@
       <DependentUpon>AdminScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Calcuiations.cs" />
+    <Compile Include="Helper.cs" />
     <Compile Include="LoginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
