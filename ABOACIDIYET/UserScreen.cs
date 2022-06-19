@@ -32,6 +32,7 @@ namespace ABOACIDIYET
         private void UserScreen_Load(object sender, EventArgs e)
         {
             FillComboBox();
+            cbActivity.SelectedIndex = 0;
             lblDataTimeNow.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
         void FillComboBox()
@@ -68,11 +69,14 @@ namespace ABOACIDIYET
 
         private void btnAddActivity_Click(object sender, EventArgs e)
         {
-            if(cbActivity.SelectedIndex==-1)
+            if (cbActivity.SelectedIndex == -1)
             {
                 MessageBox.Show("Lütfen bir alan seçiniz");
             }
-            else if(cbActivity.SelectedIndex==0) 
+            //else if (cbActivity.SelectedIndex == 0)
+            //{
+
+            //}
 
             
         }
