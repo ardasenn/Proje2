@@ -2136,8 +2136,37 @@ namespace Access.Strategy
             context.SaveChanges();
 
 
+            Faker<MealAndFood> mealAndFood;
+            List<MealAndFood> mealsAndFoods = new List<MealAndFood>();
+            for (int Ids2 = 2; Ids2 <= 51; Ids2++)
+            {
+                List<DateTime> tarihlistesi = context.Kilos.Where(x => x.UserID == Ids2).Select(x => x.CreationDate).ToList();
+                foreach (DateTime gun in tarihlistesi)
+                {
+                    List<Meal> ogunListesi = context.Meals.Where(x => x.UserID == Ids2 && x.MealTime == gun).ToList();
+                    foreach (Meal yemek in ogunListesi)
+                    {
+                        Random r = new Random();
+                        for (int i = r.Next(1, 4); i >= 0; i--)
+                        {
+                            mealAndFood = new Faker<MealAndFood>()
+                            .RuleFor(mf => mf.MealID, f => yemek.MealID)
+                            .RuleFor(mf => mf.FoodID, f =>
+                            {
+                                Random yeniSayi = new Random();
+                                int sayi = yeniSayi.Next(1, foods.Count);
+                                return sayi;
+                            });
 
+                            mealsAndFoods.Add(mealAndFood);
+                        }
 
+                    }
+                }
+            }
+
+            context.MealsAndFoods.AddRange(mealsAndFoods);
+            context.SaveChanges();
 
 
         }
