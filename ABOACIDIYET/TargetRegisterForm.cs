@@ -26,6 +26,7 @@ namespace ABOACIDIYET
         {
             RefreshComboBox();
             FillListView();
+            cmbTarget.SelectedIndex = 0;
         }
         void RefreshComboBox()
         {
