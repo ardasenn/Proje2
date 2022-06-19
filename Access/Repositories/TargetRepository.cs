@@ -22,14 +22,15 @@ namespace Access.Repositories
         }
         public List<Target> GetByUserId(int userID)
         {
-
             return db.Targets.Where(a => a.UserID == userID).OrderByDescending(a => a.StartDate).ToList();
-
+        }
+        public Target GetTarget(int userID,DateTime dateTime)
+        {
+          return db.Targets.Where(a => a.UserID == userID && a.EndDate>dateTime).OrderBy(a => a.StartDate).FirstOrDefault();
         }
         public List<Target> GetByTargets(int targetId)
         {
             return db.Targets.Where(a => a.TargetID == targetId).ToList();
-
         }
         public int Insert(Target target)
         {

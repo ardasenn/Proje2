@@ -117,7 +117,7 @@ namespace ABOACIDIYET
         "f"===n&&(o-=1,s-=1),
         r.idealWeightRangeBegin=Math.round(o*e*e*c*10)/10,
         r.idealWeightRangeEnd=Math.round(s*e*e*c*10)/10,i()}
-        
         */
+        
     }
 }
