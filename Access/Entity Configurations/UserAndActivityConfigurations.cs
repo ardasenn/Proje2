@@ -13,7 +13,8 @@ namespace Access.Entity_Configurations
         public UserAndActivityConfigurations()
         {
 
-            HasKey(ua => new { ua.UserID, ua.ActivityID });
+            //HasKey(ua => new { ua.UserID, ua.ActivityID });
+            HasKey(ua => ua.UserAndActivityID);
         }
     }
 }

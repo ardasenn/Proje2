@@ -18,12 +18,13 @@ namespace Access.Entity_Configurations
             HasIndex(a => a.Email).IsUnique(); // email unique olucak
             Property(a => a.Password).IsRequired().HasMaxLength(20);
             Property(a => a.Gender).IsRequired();
-            
+
 
             //one to many relations
             HasMany(a => a.Kilos).WithRequired(a => a.User).HasForeignKey(a => a.UserID);
             HasMany(a => a.Meals).WithRequired(a => a.User).HasForeignKey(a => a.UserID);
             HasMany(a => a.Targets).WithRequired(a => a.User).HasForeignKey(a => a.UserID);
+            HasMany(a => a.UserAndActivities).WithRequired(a => a.User).HasForeignKey(a => a.UserID);
         }
     }
 }

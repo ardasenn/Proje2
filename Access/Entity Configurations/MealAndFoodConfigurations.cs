@@ -13,7 +13,8 @@ namespace Access.Entity_Configurations
         public MealAndFoodConfigurations()
         {
 
-            HasKey(mf => new { mf.MealID, mf.FoodID });
+            HasKey(mf => mf.MealAndFoodID);
+            //HasKey(mf => new { mf.MealID, mf.FoodID });
 
         }
 
