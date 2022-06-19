@@ -63,6 +63,13 @@ namespace Access.Repositories
         /// </summary>
         /// <param name="meal"></param>
         /// <returns></returns>
+        public int Delete(int foodID)
+        {
+            Meal deleteMeal = db.Meals.Find(foodID);
+            db.Meals.Remove(deleteMeal);
+            int affRows = db.SaveChanges();
+            return affRows;
+        }
         public int Delete(Meal meal)
         {
             Meal deleteMeal = db.Meals.Find(meal.MealID);

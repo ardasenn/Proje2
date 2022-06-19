@@ -28,41 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBoxTarget = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.cmbTarget = new System.Windows.Forms.ComboBox();
+            this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.lvTargets = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
-            // comboBoxTarget
+            // cmbTarget
             // 
-            this.comboBoxTarget.FormattingEnabled = true;
-            this.comboBoxTarget.Location = new System.Drawing.Point(21, 293);
-            this.comboBoxTarget.Name = "comboBoxTarget";
-            this.comboBoxTarget.Size = new System.Drawing.Size(200, 33);
-            this.comboBoxTarget.TabIndex = 0;
+            this.cmbTarget.FormattingEnabled = true;
+            this.cmbTarget.Location = new System.Drawing.Point(21, 293);
+            this.cmbTarget.Name = "cmbTarget";
+            this.cmbTarget.Size = new System.Drawing.Size(200, 33);
+            this.cmbTarget.TabIndex = 0;
             // 
-            // dateTimePicker1
+            // dtpStartDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(21, 70);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 30);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dtpStartDate.Location = new System.Drawing.Point(21, 70);
+            this.dtpStartDate.Name = "dtpStartDate";
+            this.dtpStartDate.Size = new System.Drawing.Size(200, 30);
+            this.dtpStartDate.TabIndex = 1;
             // 
-            // dateTimePicker2
+            // dtpEndDate
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(21, 176);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 30);
-            this.dateTimePicker2.TabIndex = 2;
+            this.dtpEndDate.Location = new System.Drawing.Point(21, 176);
+            this.dtpEndDate.Name = "dtpEndDate";
+            this.dtpEndDate.Size = new System.Drawing.Size(200, 30);
+            this.dtpEndDate.TabIndex = 2;
             // 
             // label1
             // 
@@ -91,16 +93,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Hedefim";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(253, 70);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(565, 581);
-            this.dataGridView1.TabIndex = 6;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -110,23 +102,24 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Hedeflerim";
             // 
-            // button1
+            // btnInsert
             // 
-            this.button1.Location = new System.Drawing.Point(21, 355);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 35);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "EKLE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnInsert.Location = new System.Drawing.Point(21, 387);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(200, 35);
+            this.btnInsert.TabIndex = 8;
+            this.btnInsert.Text = "EKLE";
+            this.btnInsert.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnDelete
             // 
-            this.button2.Location = new System.Drawing.Point(21, 407);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 35);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "ÇIKART";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(21, 451);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(200, 35);
+            this.btnDelete.TabIndex = 9;
+            this.btnDelete.Text = "ÇIKART";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // button3
             // 
@@ -137,27 +130,57 @@
             this.button3.Text = "ONAYLA";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // lvTargets
+            // 
+            this.lvTargets.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.lvTargets.GridLines = true;
+            this.lvTargets.HideSelection = false;
+            this.lvTargets.Location = new System.Drawing.Point(263, 70);
+            this.lvTargets.Name = "lvTargets";
+            this.lvTargets.Size = new System.Drawing.Size(511, 524);
+            this.lvTargets.TabIndex = 11;
+            this.lvTargets.UseCompatibleStateImageBehavior = false;
+            this.lvTargets.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Hedef Tipi";
+            this.columnHeader1.Width = 132;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Başlangıç Tarihi";
+            this.columnHeader2.Width = 189;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Bitiş Tarihi";
+            this.columnHeader3.Width = 157;
+            // 
             // TargetRegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 663);
+            this.Controls.Add(this.lvTargets);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBoxTarget);
+            this.Controls.Add(this.dtpEndDate);
+            this.Controls.Add(this.dtpStartDate);
+            this.Controls.Add(this.cmbTarget);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "TargetRegisterForm";
             this.Text = "TargetRegisterForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.TargetRegisterForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,16 +188,19 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBoxTarget;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.ComboBox cmbTarget;
+        private System.Windows.Forms.DateTimePicker dtpStartDate;
+        private System.Windows.Forms.DateTimePicker dtpEndDate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ListView lvTargets;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }

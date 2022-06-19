@@ -14,9 +14,20 @@ namespace Access.Repositories
         {
             db = new AboDbContext();
         }
+        public List<Target> GetTargets()
+        {
+            List<Target> targets = new List<Target>();
+            targets = db.Targets.ToList();
+            return targets;
+        }
         public List<Target> GetByUserId(int userID)
         {
             return db.Targets.Where(a => a.UserID == userID).ToList();
+
+        }
+        public List<Target> GetByTargets(int targetId)
+        {
+            return db.Targets.Where(a => a.TargetID == targetId).ToList();
 
         }
         public int Insert(Target target)
@@ -29,9 +40,9 @@ namespace Access.Repositories
         {
             return db.Targets.Find(targetID);
         }
-        public int Delete(Target target)
+        public int Delete(int targetId)
         {
-            Target deleteTarget = db.Targets.Find(target.TargetID);
+            Target deleteTarget = db.Targets.Find(targetId);
             db.Targets.Remove(deleteTarget);
             int affRows = db.SaveChanges();
             return affRows;
