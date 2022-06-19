@@ -52,6 +52,7 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\UserAndActivity.cs" />
     <Compile Include="Enums\Gender.cs" />
+    <Compile Include="Enums\MealType.cs" />
     <Compile Include="Enums\PortionType.cs" />
     <Compile Include="Enums\TargetType.cs" />
     <Compile Include="Enums\UserType.cs" />

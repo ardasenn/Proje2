@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 
 namespace Access.Entity_Configurations
 {
-    public class ActivityConfigurations: EntityTypeConfiguration<Activity>
+    public class ActivityConfigurations : EntityTypeConfiguration<Activity>
     {
         public ActivityConfigurations()
         {
             Property(a => a.ActivityName).IsRequired().HasMaxLength(100);
             Property(a => a.BurnedCalorieInActivity).IsRequired();
 
+            HasMany(a => a.UserAndActivities).WithRequired(a => a.Activity).HasForeignKey(a => a.ActivityID);
         }
     }
 }

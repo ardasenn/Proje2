@@ -10,12 +10,12 @@ namespace ABOACIDIYET.Entities
     {
         private int activityID;
         private string activityName;
-        private int burnedCalorieInActivity;
+        private double burnedCalorieInActivity;
         public Activity()
         {
             UserAndActivities = new List<UserAndActivity>();
         }
-        public Activity(string activityName,int burnedCalorieInActivity)
+        public Activity(string activityName, double burnedCalorieInActivity)
         {
             this.activityName = activityName;
             this.burnedCalorieInActivity = burnedCalorieInActivity;
@@ -24,7 +24,7 @@ namespace ABOACIDIYET.Entities
 
         public int ActivityID { get => activityID; set => activityID = value; }
         public string ActivityName { get => activityName; set => activityName = value; }
-        public int BurnedCalorieInActivity { get => burnedCalorieInActivity; set => burnedCalorieInActivity = value; }
+        public double BurnedCalorieInActivity { get => burnedCalorieInActivity; set => burnedCalorieInActivity = value; }
         public virtual ICollection<UserAndActivity> UserAndActivities { get; set; }
 
     }
