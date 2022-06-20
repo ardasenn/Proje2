@@ -193,7 +193,7 @@ namespace ABOACIDIYET
         void CalculateIndexAndStandartKilo()
         {
             double kilo = kiloRepository.GetLatestKilo(user.UserID);
-            double bodyIndex = (kilo / (user.Height * user.Height))*1000;
+            double bodyIndex = (kilo / (user.Height * user.Height))*10000;
             double standartKilo;
             if (user.Gender == Gender.Erkek)
             {
