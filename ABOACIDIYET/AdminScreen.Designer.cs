@@ -28,8 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -51,9 +60,10 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -71,6 +81,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.chart2);
+            this.tabPage1.Controls.Add(this.chart1);
             this.tabPage1.Controls.Add(this.comboBox2);
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
@@ -79,6 +91,47 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Grafik";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // chart2
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart2.Legends.Add(legend1);
+            this.chart2.Location = new System.Drawing.Point(1141, 185);
+            this.chart2.Name = "chart2";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart2.Series.Add(series1);
+            this.chart2.Size = new System.Drawing.Size(10, 8);
+            this.chart2.TabIndex = 2;
+            this.chart2.Text = "chart2";
+            // 
+            // chart1
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(46, 88);
+            this.chart1.Name = "chart1";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Besinler";
+            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time;
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(1244, 524);
+            this.chart1.TabIndex = 1;
+            this.chart1.Text = "chart1";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(22, 28);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(225, 33);
+            this.comboBox2.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -286,14 +339,6 @@
             this.button6.Text = "Ekle";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(22, 28);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(225, 33);
-            this.comboBox2.TabIndex = 0;
-            // 
             // AdminScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
@@ -304,8 +349,11 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "AdminScreen";
             this.Text = "Admin Screen";
+            this.Load += new System.EventHandler(this.AdminScreen_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -341,5 +389,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

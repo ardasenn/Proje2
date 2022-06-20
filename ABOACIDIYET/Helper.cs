@@ -40,6 +40,12 @@ namespace ABOACIDIYET
                     ComboBox cBox = (ComboBox)item;
                     cBox.SelectedIndex = -1;
                 }
+                else if (item is ListView)
+                {
+
+                    ListView listView = (ListView)item;
+                    listView.Items.Clear();
+                }
             }
         }
     }

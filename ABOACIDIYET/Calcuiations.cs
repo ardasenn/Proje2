@@ -9,6 +9,9 @@ namespace ABOACIDIYET
     internal class Calcuiations
     {
 
+
+
+
         /*
         YZ.Calculator=YZ.Calculator||{},
         YZ.Calculator.Bmi=function(e,a)

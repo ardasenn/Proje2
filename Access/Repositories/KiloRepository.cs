@@ -14,6 +14,14 @@ namespace Access.Repositories
         {
             db = new AboDbContext();
         }
+
+
+        public double GetLatestKilo(int userID)
+        {
+
+            return db.Kilos.Where(a => a.UserID == userID).OrderByDescending(a => a.CreationDate).Select(x=> x.Weight).FirstOrDefault();
+        }
+
         public List<Kilo>GetByUserId(int userID)
         {
             return db.Kilos.Where(a => a.UserID == userID).ToList();

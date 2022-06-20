@@ -24,6 +24,14 @@ namespace Access.Repositories
             return db.Foods.Where(a => a.CategoryID == categoryID).ToList();
 
         }
+
+        public List<Food> FoodsAndCalories()
+        {
+            //return db.Foods.Select(x => new { x.FoodName, x.FoodCalorie }).ToList();
+            return db.Foods.ToList();
+
+        }
+
         public Food GetByFoods(int foodId)
         {
             return db.Foods.Where(a => a.FoodID == foodId).FirstOrDefault();

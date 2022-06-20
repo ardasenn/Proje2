@@ -46,6 +46,7 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // cmbTarget
@@ -53,21 +54,21 @@
             this.cmbTarget.FormattingEnabled = true;
             this.cmbTarget.Location = new System.Drawing.Point(21, 293);
             this.cmbTarget.Name = "cmbTarget";
-            this.cmbTarget.Size = new System.Drawing.Size(200, 28);
+            this.cmbTarget.Size = new System.Drawing.Size(200, 33);
             this.cmbTarget.TabIndex = 0;
             // 
             // dtpStartDate
             // 
             this.dtpStartDate.Location = new System.Drawing.Point(21, 70);
             this.dtpStartDate.Name = "dtpStartDate";
-            this.dtpStartDate.Size = new System.Drawing.Size(200, 26);
+            this.dtpStartDate.Size = new System.Drawing.Size(200, 30);
             this.dtpStartDate.TabIndex = 1;
             // 
             // dtpEndDate
             // 
             this.dtpEndDate.Location = new System.Drawing.Point(21, 176);
             this.dtpEndDate.Name = "dtpEndDate";
-            this.dtpEndDate.Size = new System.Drawing.Size(200, 26);
+            this.dtpEndDate.Size = new System.Drawing.Size(200, 30);
             this.dtpEndDate.TabIndex = 2;
             // 
             // label1
@@ -75,7 +76,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(26, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 20);
+            this.label1.Size = new System.Drawing.Size(179, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Hedef Başlangııcı";
             // 
@@ -84,7 +85,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(27, 131);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 20);
+            this.label2.Size = new System.Drawing.Size(194, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Hedefin Bitiş Tarihi";
             // 
@@ -93,7 +94,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(26, 246);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 20);
+            this.label3.Size = new System.Drawing.Size(91, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "Hedefim";
             // 
@@ -102,7 +103,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(258, 24);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 20);
+            this.label4.Size = new System.Drawing.Size(115, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Hedeflerim";
             // 
@@ -171,6 +172,7 @@
             // lvTargetsScreen
             // 
             this.lvTargetsScreen.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
@@ -188,7 +190,7 @@
             // columnHeader4
             // 
             this.columnHeader4.Text = "Hedef Tipi";
-            this.columnHeader4.Width = 132;
+            this.columnHeader4.Width = 120;
             // 
             // columnHeader5
             // 
@@ -200,9 +202,13 @@
             this.columnHeader6.Text = "Bitiş Tarihi";
             this.columnHeader6.Width = 157;
             // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "NO";
+            // 
             // TargetRegisterForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 669);
             this.Controls.Add(this.lvTargetsScreen);
@@ -247,5 +253,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
     }
 }

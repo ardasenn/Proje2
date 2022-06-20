@@ -24,15 +24,14 @@ namespace ABOACIDIYET
         }
         private void TargetRegisterForm_Load(object sender, EventArgs e)
         {
-            RefreshComboBox();
-            FillListView();
-            cmbTarget.SelectedIndex = 0;
-        }
-        void RefreshComboBox()
-        {
-            cmbTarget.Items.Clear();
+            dtpStartDate.MinDate = DateTime.Now;
+            dtpEndDate.MinDate = DateTime.Now.AddDays(1);
             cmbTarget.Items.AddRange(Enum.GetNames(typeof(TargetType)));
+            cmbTarget.SelectedIndex = 0;
+            FillListView();
+
         }
+
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (lvNewTarget.SelectedItems.Count <=0)
@@ -60,15 +59,19 @@ namespace ABOACIDIYET
         }
         void FillListView()
         {
+           lvTargetsScreen.Items.Clear();
            List<Target> targetList=targetRepository.GetByUserId(user.UserID);
-            ListViewItem lvi = new ListViewItem();
+
             foreach (Target item in targetList)
             {
-                lvi.Text = item.TargetType.ToString();
+                ListViewItem lvi = new ListViewItem();
+                lvi.Text = item.TargetID.ToString();
+                lvi.SubItems.Add(item.TargetType.ToString());
                 lvi.SubItems.Add(item.StartDate.ToString());
                 lvi.SubItems.Add(item.EndDate.ToString());
                 lvi.Tag = item;
                 lvTargetsScreen.Items.Add(lvi);
+  
             }
         }
         private void btnInsert_Click(object sender, EventArgs e)
@@ -82,10 +85,33 @@ namespace ABOACIDIYET
         
         private void button3_Click(object sender, EventArgs e)
         {
+            List<Target> targetList = targetRepository.GetByUserId(user.UserID);
+            
             for (int i = 0; i < lvNewTarget.Items.Count; i++)
             {
                 Target target = (Target)lvNewTarget.Items[i].Tag;
+                foreach (Target mevcutTargets in targetList)
+                {
+                    if (target.StartDate >= mevcutTargets.StartDate && target.StartDate <= mevcutTargets.EndDate)
+                    {
+                        MessageBox.Show("Eklemeye çalıştığınız hedefinizin başlangıç tarihi mevcut hedeflerinizle çakışmaktadır.");
+                        return;
+                    }
+                    else if (target.EndDate >= mevcutTargets.StartDate && target.EndDate <= mevcutTargets.EndDate)
+                    {
+                        MessageBox.Show("Eklemeye çalıştığınız hedefinizin bitiş tarihi mevcut hedeflerinizle çakışmaktadır.");
+                        return;
+                    }
+                    else if (target.StartDate <= mevcutTargets.StartDate && target.EndDate >= mevcutTargets.EndDate)
+                    {
+                        MessageBox.Show("Eklemeye çalıştığınız hedef mevcut hedeflerinizi kapsamamalıdır");
+                        return;
+                    }
+                }
+
                 if (targetRepository.Insert(target) >= 1) MessageBox.Show("Kayıt işlemi başarılı");
+                   lvNewTarget.Items.RemoveAt(i);
+                FillListView();
             }
         }
     }
