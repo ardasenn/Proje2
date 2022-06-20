@@ -18,3 +18,9 @@ D:\Projects\PROJE5\Model\obj\Debug\Model.csproj.AssemblyReference.cache
 D:\Projects\PROJE5\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 D:\Projects\PROJE5\Model\obj\Debug\Model.dll
 D:\Projects\PROJE5\Model\obj\Debug\Model.pdb
+D:\Projects\PROJE7\Model\bin\Debug\Model.dll
+D:\Projects\PROJE7\Model\bin\Debug\Model.pdb
+D:\Projects\PROJE7\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\Projects\PROJE7\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Projects\PROJE7\Model\obj\Debug\Model.dll
+D:\Projects\PROJE7\Model\obj\Debug\Model.pdb
