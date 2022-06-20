@@ -188,6 +188,7 @@ namespace ABOACIDIYET
             this.Hide();
             form.ShowDialog();
             this.Show();
+            FillProgress();
         }
 
         void CalculateIndexAndStandartKilo()
