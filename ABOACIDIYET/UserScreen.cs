@@ -64,12 +64,18 @@ namespace ABOACIDIYET
             if (target != null)
             {
                 progressBar1.Maximum = Convert.ToInt32((target.EndDate - target.StartDate).TotalDays);
-                progressBar1.Value = Math.Abs(Convert.ToInt32((DateTime.Now.Date - target.StartDate).TotalDays));
+                if (Math.Abs(Convert.ToInt16((DateTime.Now.Date - target.StartDate).TotalDays)) > progressBar1.Maximum)
+                {
+                    progressBar1.Value = 0;
+                }
+                else
+                {
+                    progressBar1.Value = Math.Abs(Convert.ToInt16((DateTime.Now.Date - target.StartDate).TotalDays));
+                }
                 lblTargetEndDate.Text = target.EndDate.ToString("dd/MM/yyyy");
                 lblTargetStartDate.Text = target.StartDate.ToString("dd/MM/yyyy");
             }
         }
-
         void FillComboBox()
         {
             cbActivity.DataSource = activities;
